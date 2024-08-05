@@ -186,6 +186,9 @@ spec:
           requests:
             cpu: 250m
             memory: 750Mi
+        env:
+        - name: BOLD_SERVICES_HOSTING_ENVIRONMENT
+          value: Kubernetes
         readinessProbe:
           httpGet:
             path: /health-check
@@ -238,6 +241,9 @@ spec:
           requests:
             cpu: 250m
             memory: 750Mi
+        env:
+        - name: BOLD_SERVICES_HOSTING_ENVIRONMENT
+          value: Kubernetes
         readinessProbe:
           httpGet:
             path: /health-check
@@ -290,6 +296,9 @@ spec:
           requests:
             cpu: 250m
             memory: 750Mi
+        env:
+        - name: BOLD_SERVICES_HOSTING_ENVIRONMENT
+          value: Kubernetes
         readinessProbe:
           httpGet:
             path: /health-check
@@ -394,6 +403,9 @@ spec:
           requests:
             cpu: 250m
             memory: 750Mi
+        env:
+        - name: BOLD_SERVICES_HOSTING_ENVIRONMENT
+          value: Kubernetes
         readinessProbe:
           httpGet:
             path: /health-check
